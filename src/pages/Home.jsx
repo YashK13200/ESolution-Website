@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
 const services = [
@@ -56,7 +57,7 @@ const features = [
 const faqs = [
   {
     q: 'How long does it take to get a certificate?',
-    a: 'Most certificates are processed within 1-2 days, depending on requirements.',
+    a: 'Most certificates are processed according to government guidelines, depending on requirements.',
   },
   {
     q: 'Do you provide urgent ticket bookings?',
@@ -65,6 +66,8 @@ const faqs = [
 ];
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
@@ -107,7 +110,29 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-72 h-72 bg-blue-300 rounded-full opacity-30 blur-3xl -z-10"></div>
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-800 rounded-full opacity-20 blur-3xl -z-10"></div>
       </section>
-
+        
+        {/* Welcome Section */}
+        <div className="container mx-auto px-4 py-10">
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">{t('welcome')}</h1>
+          <p className="text-lg text-gray-700 mb-6">{t('tagline')}</p>
+          <Link to="/services" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition">
+            {t('explore_services')}
+          </Link>
+        </motion.section>
+        <section className="mt-12 max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-4">{t('tagline')}</h2>
+          <p className="text-gray-700">
+            {t('about_shop')}
+          </p>
+        </section>
+      </div>
+      
       {/* Services Overview */}
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center text-blue-700 mb-10">Our Major Services</h2>
@@ -229,6 +254,28 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Welcome Section */}
+      {/* <div className="container mx-auto px-4 py-10">
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-12"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">{t('welcome')}</h1>
+          <p className="text-lg text-gray-700 mb-6">{t('tagline')}</p>
+          <Link to="/services" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition">
+            {t('explore_services')}
+          </Link>
+        </motion.section>
+        <section className="mt-12 max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-4">{t('tagline')}</h2>
+          <p className="text-gray-700">
+            {t('about_shop')}
+          </p>
+        </section>
+      </div> */}
     </div>
   );
 }

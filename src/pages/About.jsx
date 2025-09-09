@@ -10,7 +10,7 @@ export default function About() {
           <div className="md:w-2/3 mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">Who We Are</h1>
             <p className="text-lg md:text-2xl font-medium mb-4">
-              Your trusted neighborhood service partner for documents, travel, and daily essentials.
+              {t('Your trusted neighborhood service partner for documents, travel, and daily essentials.')}
             </p>
             <p className="text-base md:text-lg opacity-90">
               For years, we’ve been helping students, families, and professionals with government certificates, ticket bookings, and everyday services.

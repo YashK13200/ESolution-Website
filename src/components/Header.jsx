@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import LanguageSwitcher from './LanguageSwitcher';
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/services', label: 'Services' },
@@ -15,7 +15,7 @@ export default function Header() {
     <header className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="text-xl font-bold text-blue-600">Rohit-ESolutions</Link>
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map(link => (
             <NavLink
               key={link.to}
@@ -28,6 +28,7 @@ export default function Header() {
               {link.label}
             </NavLink>
           ))}
+          <LanguageSwitcher />
         </nav>
         <button
           className="md:hidden text-2xl"
@@ -50,6 +51,7 @@ export default function Header() {
               {link.label}
             </NavLink>
           ))}
+          <LanguageSwitcher />
         </div>
       )}
     </header>
