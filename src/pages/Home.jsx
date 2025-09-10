@@ -217,7 +217,7 @@ export default function Home() {
             <p className="mb-2">We’re just one call away. Reach out for quick support!</p>
             <div className="flex gap-4 mt-4">
               <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/919807374318"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold flex items-center gap-2 transition"
@@ -225,7 +225,7 @@ export default function Home() {
                 <span>💬</span> WhatsApp
               </a>
               <a
-                href="tel:+911234567890"
+                href="tel:+919807374318"
                 className="bg-blue-800 hover:bg-blue-900 text-white px-4 py-2 rounded-full font-semibold flex items-center gap-2 transition"
               >
                 <span>📞</span> Call Now

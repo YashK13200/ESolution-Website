@@ -55,7 +55,7 @@ export default function Contact() {
             title="Phone"
             content={
               <a
-                href="tel:+911234567890"
+                href="tel:+919807374318"
                 className="text-blue-600 hover:underline font-semibold"
               >
                 +91 9807374318
@@ -81,7 +81,7 @@ export default function Contact() {
             title="Email"
             content={
               <a
-                href="mailto:jinkazma748@gmail.com"
+                href="mailto:rohitshop7777@gmail.com"
                 className="text-blue-600 hover:underline font-semibold"
               >
                 rohitshop7777@gmail.com
@@ -164,13 +164,13 @@ export default function Contact() {
             <p className="mb-4">Call us now — we’ll get it done for you.</p>
             <div className="flex gap-4">
               <a
-                href="tel:+911234567890"
+                href="tel:+919807374318"
                 className="bg-blue-800 hover:bg-blue-900 text-white px-6 py-2 rounded-full font-semibold shadow transition"
               >
                 Call Now
               </a>
               <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/919807374318"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold shadow transition"
