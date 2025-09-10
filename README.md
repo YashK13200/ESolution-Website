@@ -63,9 +63,7 @@ The build files will be generated in the `dist` directory.
 
 ## Author
 
-Your Name  
-Your Email  
-Your Website (if applicable)
+Yash Kashyapp
 
 ## License
 
