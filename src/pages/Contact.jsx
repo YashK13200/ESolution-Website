@@ -35,7 +35,7 @@ export default function Contact() {
             title="Shop Address"
             content={
               <>
-                Unnamed Road, Jharna Tola,<br />
+                Jharna Tola,<br />
                 Nanda Nagar, Gorakhpur,<br />
                 Uttar Pradesh 273008
                 <br />
@@ -58,7 +58,7 @@ export default function Contact() {
                 href="tel:+911234567890"
                 className="text-blue-600 hover:underline font-semibold"
               >
-                +91 12345 67890
+                +91 9807374318
               </a>
             }
           />
@@ -67,7 +67,7 @@ export default function Contact() {
             title="WhatsApp"
             content={
               <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/919807374318"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-600 hover:underline font-semibold"
@@ -84,7 +84,7 @@ export default function Contact() {
                 href="mailto:jinkazma748@gmail.com"
                 className="text-blue-600 hover:underline font-semibold"
               >
-                jinkazma748@gmail.com
+                rohitshop7777@gmail.com
               </a>
             }
           />

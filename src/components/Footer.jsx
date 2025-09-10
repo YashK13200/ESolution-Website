@@ -16,7 +16,7 @@ export default function Footer() {
             <span className="font-bold text-xl tracking-wide">Rohit-ESolution</span>
           </div>
           <div className="text-sm mb-1">
-            Address: Unnamed Road, Jharna Tola, Nanda Nagar,<br />
+            Address:Jharna Tola, Nanda Nagar,<br />
             Gorakhpur, Uttar Pradesh 273008
           </div>
           <div className="text-sm mb-1">Open: 9am - 8pm</div>
